@@ -6,6 +6,7 @@ struct Node{
     struct Node* next;
 };
 
+//print the linked list
 void printList(struct Node* head){
     if(head==NULL) {
         printf("The list is empty");
@@ -18,6 +19,7 @@ void printList(struct Node* head){
 
 }
 
+//Insert the node in the linked list
 void insertNode(int value, struct Node** head){
     struct Node* temp=(struct Node*)malloc(sizeof(struct Node));
     temp->val=value;
